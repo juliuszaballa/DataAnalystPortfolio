@@ -78,6 +78,7 @@ body {
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     text-align: center;
     padding: 0 20px;
+    padding-top: 100px;
 }
 
 .hero-content h1 {
@@ -389,14 +390,105 @@ footer {
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
 @media (max-width: 900px) {
     .projects-grid, .skills-grid {
         grid-template-columns: 1fr;
     }
     .hero-content h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
+    }
+    .hero-content h2 {
+        font-size: 1.2rem;
     }
     .section-title {
+        font-size: 1.3rem;
+    }
+    .cta-button, .btn-details {
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem;
+    }
+    .project-image img {
+        height: 160px;
+    }
+    .skill-card, .project-card {
+        padding: 1rem;
+    }
+    .about, .skills, .projects, .contact {
+        padding: 60px 0 40px 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav-content {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        align-items: flex-start;
+        margin-top: 0.5rem;
+    }
+    .logo {
         font-size: 1.5rem;
+    }
+    .hero-content {
+        padding-top: 3rem;
+    }
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+    .hero-content h2 {
+        font-size: 1rem;
+    }
+    .cta-button, .btn-details {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .project-image img {
+        height: 120px;
+    }
+    .section-title {
+        font-size: 1.1rem;
+    }
+    .about, .skills, .projects, .contact {
+        padding: 40px 0 20px 0;
+    }
+    .contact-content, .about-content {
+        padding: 0 5px;
+    }
+    footer {
+        padding: 1rem 0;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-content h1 {
+        font-size: 1.1rem;
+    }
+    .hero-content h2 {
+        font-size: 0.9rem;
+    }
+    .cta-button, .btn-details {
+        font-size: 0.9rem;
+        padding: 0.6rem 0.8rem;
+    }
+    .project-image img {
+        height: 80px;
+    }
+    .section-title {
+        font-size: 1rem;
+    }
+    .about, .skills, .projects, .contact {
+        padding: 20px 0 10px 0;
     }
 } 
